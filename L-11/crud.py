@@ -13,8 +13,7 @@
 # # Examples
 
 users = [
-  {"id":1 , "name":"Alice" , "age":25},
-  {"id":2 , "name":"Melisha" , "age":30}
+ 
  ]
 
 while True:
@@ -33,6 +32,7 @@ while True:
       user_id = int(input("Enter id : "))
       name = input("Enter Name : ")
       age = int(input("Enter age : "))
+
       users.append({"id":user_id , "name":name , "age":age})
 
       print ("User Successfully Added!!")

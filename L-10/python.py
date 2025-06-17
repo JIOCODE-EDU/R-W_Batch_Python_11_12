@@ -11,16 +11,25 @@
 
 # Example
 
-# my_list = [1 , 2 , 3]
+# my_list = [1 , 2 , 3 , 4]
+# profile = ["name" , "id" , 1 , True]
+
+# print(profile)
 
 # my_list[2] = 10      # change
+# my_list[3] = 10      # change
+
+# print(my_list)
 
 # my_list.append(20)   # add
 
-# my_list.append(20)   # add
+# my_list.append(30)   # add
+
+# # my_list.append(20)   # add
 
 # del my_list[0]       # remove
 
+# print(my_list)
 # print(my_list)
 
 # Tuple
@@ -30,34 +39,41 @@
 # my_tuple = (1 , 2 , 3)
 
 # my_tuple[0] = 10
-
 # del my_tuple[1]
 
 # print(my_tuple)
 
+
 # Set
 # mutable
 
-# my_set = {1  , 2 , 3}
+my_set = {1  , 2 , 3}
 
 # my_set.add(10)
 
-# my_set.add(10) # dublicate not supported
+# print(my_set)
+
+# my_set.add(20)
+
+# my_set.add(30)
 
 # print(my_set)
+
+
+# my_set.add(10) # dublicate not supported
+
 
 # Dictionary
 # Mutable
 
-# my_dics = {"1":"alice" , "2":"vishakha"}
+my_dics = {'1':'alice' , '2':'vishakha'}
 
-# my_dics["1"] = "india"
+my_dics["1"] = "india"
+my_dics["3"] = "english"
+del my_dics["2"]
 
-# my_dics["3"] = "english"
+print(my_dics)
 
-# del my_dics["2"]
-
-# print(my_dics)
 
 # name1 = "taxil"
 # name2 = "manan"
