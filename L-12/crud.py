@@ -42,6 +42,7 @@ while True:
       print("Invalid Input!!")
 
   elif choice == "2":
+
     if not users:
       print("No User found.")
     else:
@@ -53,15 +54,17 @@ while True:
 
     try:
 
-      user_id = int(input("Enter Update user id : "))
+      user_id = int(input("Enter Update user id : ")) #4
 
       found = False
 
-      for user in users:
+      for user in users: # 1 == 4 # 2 == 4 # 3 == 4 # 4 == 4
 
         if user["id"] == user_id:
 
           field = input("Enter your field to update (name/age):").lower()
+
+          print(field)
 
           if field in user:
 
@@ -70,6 +73,7 @@ while True:
               user["age"] = int(input("Enter new age : "))
 
             else:
+
               user["name"] = input("Enter new name: ")
 
             print("User update successfully!!!")
@@ -78,8 +82,9 @@ while True:
 
             print("invalid field!!")
 
-          found = True
 
+          found = True
+          
           break
 
       if not found:
