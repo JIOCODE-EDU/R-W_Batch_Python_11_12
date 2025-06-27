@@ -3,32 +3,35 @@
 # Python provides many built-in functions like len(), max(), min(), sum(), type(), range(), etc.
 
 
-numbers = [3, 5, 7]
-print(len(numbers)) 
-print(sum(numbers))
+# numbers = [3, 5, 7]
+# print(len(numbers)) 
+# print(sum(numbers))
 
 # 2. Creating user-defined functions (UDF)
 # Defined using def keyword.
 
-def greet(name):
-    print(f"Hello, {name}!")
-    print(f"I am, Alexa!")
+# def greet(name):
+#   print(f"I am, Alexa!")
+#   print(f"Hi, {name}")
+#   print(20 + 20)
 
-greet("Alice")
+# greet("Zeel")
+# greet("Alice")
 
-def sum(x , y):
-  print(x + y)
 
-sum(10 , 20)
+# def sum(x , y):
+#   print(x + y)
 
-def expontiationss(x , y):
-  print(x ** y)
+# sum(10 , 20)
 
-expontiationss(2 , 5)
+# def expontiationss(x , y):
+#   print(x ** y)
 
-z = sum(100 , 200)
+# expontiationss(2 , 5)
 
-print("Sum :" , z)
+# z = sum(100 , 200)
+
+# print("Sum :" , z)
 
 # 3. Using *args, kwargs, and doc
 
@@ -53,13 +56,13 @@ print(example_func.__doc__)
 
 # Used in factorial, fibonacci, tree traversal, etc.
 
-def factorial(n):
-    if n == 1:
-        return 1
-    else:
-        return n * factorial(n-1)
+# def factorial(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         return n * factorial(n-1)
 
-print("factorial :" , factorial(6)) 
+# print("factorial :" , factorial(6)) 
 
 # 5. Applying lambda (anonymous) functions
 
@@ -67,29 +70,32 @@ print("factorial :" , factorial(6))
 
 # Syntax: lambda arguments : expression
 
-square = lambda x: x**3
-print(square(10))  
+# square = lambda x: x**3
+# print(square(10))  
 
 # 6. Using the global keyword
 
 # Used to modify global variables inside a function.
 
 
-x = 10
+# x = 10
+# y = 20
 
-def change():
-    global x
-    x = 20
+# def change():
+#     global x
+#     x = 20
+#     y = 10
 
 # change()
-print(x)  
+# print(x)  
+# print(y)  
 
 # 7. Returning multiple values
 
 # Functions can return multiple values as tuples.
 
 def operations(a, b):
-    return a+b, a-b, a*b, a/b , a ** b
+    return [a+b, a-b, a*b, a/b , a ** b]
 
 add, sub, mul, div , exp = operations(10, 2)
 
@@ -104,10 +110,10 @@ print(add, sub, mul, div , exp)
 # map() applies a function to all items.
 
 nums = [5, 2, 9, 1]
-print(sorted(nums))  # [1, 2, 5, 9]
+# print(sorted(nums))  # [1, 2, 5, 9]
 
-nums.sort()
-print(nums)  # [1, 2, 5, 9]
+# nums.sort()
+# print(nums)  # [1, 2, 5, 9]
 
-squared = list(map(lambda x: x**2, nums))
-print(squared)  # [1, 4, 25, 81]
+# squared = list(map(lambda x: x**2, nums))
+# print(squared)  # [1, 4, 25, 81]
